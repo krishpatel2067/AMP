@@ -112,11 +112,11 @@ This is purely visual, it does not change any setting. If you apply while the pr
 # Use Cases
 Here are several common examples where array-type structure come in handy (and especially where such a convenient plugin comes in handy well!).
 
-## Staircase to Heaven
+## Stairway to Heaven
 * Relative offset only - (0, 1, 1)
 * Count - 100
 
-![Staircase to heaven](Staircase_To_Heaven.png)
+![Stairway to heaven](Stairway_To_Heaven.png)
 
 ## Skyscraper windows
 4 parts selected (in red)
@@ -133,9 +133,11 @@ Place two parts adjacent to another another (set them to different colors); set 
 
 (This is only one row, so place more adjacent parts to create an entire tiled floor)
 Here is the preview:
+
 ![Tiles preview](Tiles_Preview.png)
 
 And here is the product:
+
 ![Tiles applied](Tiles_Applied.png)
 
 # Other Info
@@ -169,5 +171,7 @@ Priority levels:
 Thank you all for using this plugin. I appreciate your patience with my novelty with plugins in advance! With reporting bugs or requesting features, just know beforehand that I am considering all feedback, but I may be delayed in delivering a response and/or the update.
 
 (If you are reading this on the day of release then Happy New Year!)
+
 ___
-(c) TheCarbyneUniverse 2020
+*(c) TheCarbyneUniverse 2020*
+*All rights reserved.*
