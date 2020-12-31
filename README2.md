@@ -177,4 +177,5 @@ Thank you all for using this plugin. I appreciate your patience with my novelty 
 
 ___
 *(c) TheCarbyneUniverse 2020*
+
 *All rights reserved.*
