@@ -11,7 +11,7 @@ Visit SITE to install the plugin to Roblox Studio.
 
 1. Open the widget by clicking on the plugin icon:
 
- ![Plugin button](Plugin_Button.png)
+ ![Plugin button](Images/Plugin_Button.png)
 
 2. Select a part or multiple parts. 
 3. The last part selected will be shown along with its class name [1]. Under it, you can add the modifier for all selected parts, by clicking on the corresponding button [2].
