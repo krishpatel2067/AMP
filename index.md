@@ -169,5 +169,5 @@ Priority levels:
 Thank you all for using this plugin. I appreciate your patience with my novelty with plugins in advance! With reporting bugs or requesting features, just know beforehand that I am considering all feedback, but I may be delayed in delivering a response and/or the update.
 
 (If you are reading this on the day of release then Happy New Year!)
-_________________________________________________
+___
 (c) TheCarbyneUniverse 2020
