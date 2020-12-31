@@ -24,9 +24,10 @@ Visit SITE to install the plugin to Roblox Studio.
 
 Notice the "Apply" button. Until you click it, any change of settings will reflect only a *preview* of the result. To actually create the result, you must apply the modifier by clicking the button. Once you apply,  you cannot change the settings and you'll have to add the modifier to the part again.
 
-## Features
+___
+# Features
 
-### Offset
+## Offset
 There are two modes, which can both be on/off at the same time or have only one of them on.
 * **Constant** - using studs to position each array part
 * **Relative** - using factors of the size of the original part to create incrementally units
@@ -47,7 +48,7 @@ This is after setting the X relative offset to 1 while keeping the constant offs
 
 ![Relative and constant enabled](Relative_And_Constant.png)
 
-### Array Type
+## Array Type
 * **Fixed count** - create a set number of parts with a defined offset
 * **Fit to length** - create as many parts as needed to fit a certain length with a defined offset
 * **Endpoint incremental** - create a set number of parts between two "endpoint" parts where the offset is automatically set
@@ -82,7 +83,7 @@ And here is with it off:
 
 > **NOTE: Endpoint incremental mode is in alpha, please use with patience. I plan to add more features to it and eliminate bugs.**
 
-### Axis Type
+## Axis Type
 * **Local** - use the vectors of the part's faces
 * **Global** - use the world axes 
 
@@ -109,7 +110,8 @@ Using this button, you can choose if you would like to view the preview parts be
 
 This is purely visual, it does not change any setting. If you apply while the preview parts are hidden, it will still function as intended.
 
-# Use Cases
+___
+# Common Use Cases
 Here are several common examples where array-type structure come in handy (and especially where such a convenient plugin comes in handy well!).
 
 ## Stairway to Heaven
@@ -140,6 +142,7 @@ And here is the product:
 
 ![Tiles applied](Tiles_Applied.png)
 
+___
 # Other Info
 
 ## Current Issues
