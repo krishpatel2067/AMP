@@ -23,7 +23,7 @@ Visit SITE to install the plugin to Roblox Studio.
 ![Settings](Settings.png)
 
 Notice the "Apply" button. Until you click it, any change of settings will reflect only a *preview* of the result. To actually create the result, you must apply the modifier by clicking the button. Once you apply,  you cannot change the settings and you'll have to add the modifier to the part again.
-___
+
 ## Features
 
 ### Offset
@@ -56,7 +56,31 @@ The last one deserves a bit more explanation. It creates a series of parts betwe
 
 Unlike the other two types, endpoint incremental needs to have the count be n + 2 where n denotes the number of parts in between the two endpoints.
 
-> **NOTE: This mode is in alpha, please use with patience. I plan to add more features to it and eliminate bugs.**
+### Endpoint 1 and Endpoint 2
+This is the terminology I will use to describe the following behavior of endpoint incremental. After you have established a pair of endpoints (simply by having preview parts between them), you can select one of those endpoints to have them be endpoint 1. This will mean that the array parts will mimick endpoint. For example:
+
+![Small part selected as endpoint 1](Endpoint_1.png)
+This is when the left part is selected last. It is set to Endpoint 1 and therefore, the array parts are small just like it.
+
+![Large part selected as endpoint 1](Endpoint_2.png)
+On the contrary, since the large part is now endpoint 1, the array parts are also all large.
+
+> **NOTE: This Endpoint 1 and 2 behavior will not occur with transform on (see below).**
+
+## Transform
+This is an optional feature that is only configurable when endpoint incremental is selected. By default, it is off, meaning the array parts between the endpoints do not update in size or orientation (they derive it from endpoint 1). When you enable the option, the array parts in between will incrementally scale and rotate from endpoint 1's transformation to endpoint 2's. Basically it's just how position is incremented, except setting transform to true will ensure that the size and orientation also gets incremented. 
+
+> **NOTE: When you have transform enabled, it doesn't matter which endpoint is 1, it will function the same.**
+
+Here is an example with tranform on:
+![Transform on](Transform_On.png)
+
+The above image, since there are more parts, the increment between each part is small, thus it looks "smoother." It almost looks like a spiral staircase except that this one is in a linear fashion (I plan on adding curves to enchance the resulting structures).
+
+And here is with it off:
+![Transform off](Transform_Off.png)
+
+> **NOTE: Endpoint incremental mode is in alpha, please use with patience. I plan to add more features to it and eliminate bugs.**
 
 ### Axis Type
 * **Local** - use the vectors of the part's faces
@@ -84,13 +108,52 @@ Using this button, you can choose if you would like to view the preview parts be
 ![Toggle preview button](Hide_Preview.png)
 
 This is purely visual, it does not change any setting. If you apply while the preview parts are hidden, it will still function as intended.
-___
 
-## Current Issues/Warnings
+# Use Cases
+Here are several common examples where array-type structure come in handy (and especially where such a convenient plugin comes in handy well!).
+
+## Stairway to Heaven
+* Relative offset only - (0, 1, 1)
+* Count - 100
+
+![Stairway to heaven](Stairway_To_Heaven.png)
+
+## Skyscraper windows
+4 parts selected (in red)
+* Relative offset - (0, 1, 0)
+* Constant offset - (0, 1, 0)
+* Count - 25
+
+![Skyscraper windows](Skyscraper_Windows.png)
+
+## Tiles
+Place two parts adjacent to another another (set them to different colors); set these to both:
+* Relative offset - (2, 0, 0)
+* Count - 10
+
+(This is only one row, so place more adjacent parts to create an entire tiled floor)
+Here is the preview:
+
+![Tiles preview](Tiles_Preview.png)
+
+And here is the product:
+
+![Tiles applied](Tiles_Applied.png)
+
+# Other Info
+
+## Current Issues
 * Undo/redo isn't exactly "compatible" with this yet, so please be cautious when using it. If you undo, then the output may fill up with warnings stating the parent property of certain instances is locked. This is due to them already being destroyed, and hitting undo with try to revive them which will cause problems. This isn't a destructure issue, just an annoying one.
 * I have not yet set up a system to filter all the text boxes yet, so refrain from entering invalid inputs such as a string.
-* Other bugs not listed here will occur, especially since this is my first experience in creating and publishing a plugin. Please post it in the plugin release's DevForum post and include specific reproduction steps. 
-___
+* Other bugs not listed here will occur, especially since this is my first experience in creating and publishing a plugin. Please post it in the plugin release's DevForum post and include specific reproduction steps.
+
+## Warnings
+* AMP will insert a folder called "PreivewParts_AMP" in the workspace to store preview parts temporarily. It will automatically delete it once the plugin unloads. Please do not delete this folder manually to ensure the best function. I also have this as a friendly reminder inside of the folder if you expand it:
+
+![Warning](Warning.png)
+
+*  Upon installing the plugin, Studio will prompt you to allow or deny script injection permission. I don't know why that appears, but denying it will not allow the plugin to function.
+
 ## My Todo List
 Priority levels:
 [1]  - High (almost guaranteed)
@@ -102,8 +165,13 @@ Priority levels:
 - [ ] [1] Optimize code
 - [ ] [2] Allow endpoint incremental to work with 2+ parts e.g. selecting 3 parts will create a "triangle" of array parts in between.
 - [ ] [3] Adding an object transformation mode to create more advanced structures
-___
+- [ ] [3] Adding a system to create curves to have the parts follow as opposed to simply a straight line
+
 ## Closure
 Thank you all for using this plugin. I appreciate your patience with my novelty with plugins in advance! With reporting bugs or requesting features, just know beforehand that I am considering all feedback, but I may be delayed in delivering a response and/or the update.
 
-(If you are reading this on the day of release then Happy New Year!) :sparkles:
+(If you are reading this on the day of release then Happy New Year!)
+
+___
+*(c) TheCarbyneUniverse 2020*
+*All rights reserved.*
