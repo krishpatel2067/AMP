@@ -109,13 +109,44 @@ Using this button, you can choose if you would like to view the preview parts be
 
 This is purely visual, it does not change any setting. If you apply while the preview parts are hidden, it will still function as intended.
 
+# Use Cases
+Here are several common examples where array-type structure come in handy (and especially where such a convenient plugin comes in handy well!).
+
+## Staircase to Heaven
+* Relative offset only - (0, 1, 1)
+* Count - 100
+
+![Staircase to heaven](Staircase_To_Heaven.png)
+
+## Skyscraper windows
+4 parts selected (in red)
+* Relative offset - (0, 1, 0)
+* Constant offset - (0, 1, 0)
+* Count - 25
+
+![Skyscraper windows](Skyscraper_Windows.png)
+
+## Tiles
+Place two parts adjacent to another another (set them to different colors); set these to both:
+* Relative offset - (2, 0, 0)
+* Count - 10
+
+(This is only one row, so place more adjacent parts to create an entire tiled floor)
+Here is the preview:
+![Tiles preview](Tiles_Preview.png)
+
+And here is the product:
+![Tiles applied](Tiles_Applied.png)
+
+# Other Info
+
 ## Current Issues
 * Undo/redo isn't exactly "compatible" with this yet, so please be cautious when using it. If you undo, then the output may fill up with warnings stating the parent property of certain instances is locked. This is due to them already being destroyed, and hitting undo with try to revive them which will cause problems. This isn't a destructure issue, just an annoying one.
 * I have not yet set up a system to filter all the text boxes yet, so refrain from entering invalid inputs such as a string.
 * Other bugs not listed here will occur, especially since this is my first experience in creating and publishing a plugin. Please post it in the plugin release's DevForum post and include specific reproduction steps.
 
 ## Warnings
-* AMP will insert a folder called "PreivewParts_AMP" in the workspace to store preview parts temporarily. It will automatically delete it once the plugin unloads. Please do not delete this folder manually to ensure the best function. I also have the warning inside of the folder if you expand it:
+* AMP will insert a folder called "PreivewParts_AMP" in the workspace to store preview parts temporarily. It will automatically delete it once the plugin unloads. Please do not delete this folder manually to ensure the best function. I also have this as a friendly reminder inside of the folder if you expand it:
 
 ![Warning](Warning.png)
 
