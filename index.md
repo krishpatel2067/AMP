@@ -11,16 +11,16 @@ Visit SITE to install the plugin to Roblox Studio.
 
 1. Open the widget by clicking on the plugin icon:
 
-![Add Button](/images/Add_Part.png) 
+ ![Plugin button](Plugin_Button.png)
 
 2. Select a part or multiple parts. 
 3. The last part selected will be shown along with its class name [1]. Under it, you can add the modifier for all selected parts, by clicking on the corresponding button [2].
 
-![Add_Part|499x308](upload://2SgGGl8BQ8O7edqNezCqwp69l9k.png) 
+![Add button](Add_Part.png)
 
 4. You will see all the settings currently available. Let us understand what each one does in the section below.
 
-![image|302x500](upload://fniAFE20GXhnkYU4xEOvk6HlvJV.jpeg) 
+![Settings](Settings.png)
 
 Notice the "Apply" button. Until you click it, any change of settings will reflect only a *preview* of the result. To actually create the result, you must apply the modifier by clicking the button. Once you apply,  you cannot change the settings and you'll have to add the modifier to the part again.
 ___
@@ -39,13 +39,13 @@ Since you can have constant and relative offset both on at the same time, you ca
 
 The part below is of size 4 in the X-direction. Offsetting it by 3 will leave a 1 stud overlap between each part.
 
-![image|690x233](upload://kc6sEj1ePC6KWMSyTIdOtid6Ub7.jpeg) 
+![Constant enabled only](Only_Constant.png)
 
 If you want it to be distance between the *edges* of the parts, all you need to do is enable relative offset and input 1 for that given direction.
 
 This is after setting the X relative offset to 1 while keeping the constant offset enabled. As you can see, now it's 3 studs between the *edges* of parts.
 
-![image|690x172](upload://leDkzOg5kLkGsfXeDc7K1oa7N4f.jpeg) 
+![Relative and constant enabled](Relative_And_Constant.png)
 
 ### Array Type
 * **Fixed count** - create a set number of parts with a defined offset
@@ -65,12 +65,12 @@ NOTE: This mode is in alpha, please use with patience. I plan to add more featur
 The difference between the two is seen when you rotate the original part. 
 
 This is the result with local selected:
-[Local|687x499](upload://ni7DUlqYLIT9p6TVvVnmprLicOm.gif) 
+![Local axis type](Local.gif)
 
 In local mode, the array parts move with the rotation of the original part and their axis is one of the part's face vectors (such as -Z being the look vector etc.).
 
 In contrast, this is what happens when global is selected.
-[Global|600x442](upload://kH8hZORqdLoWAoqZhbioVKvciqu.gif) 
+![Global axis type](Global.gif)
 
 Global mode can be useful in certain cases if you just want the array parts to rotate while being stationary on a global axis. This will limit you to the 6 axis (+X, +Y, +Z, -X, -Y, and -Z) and diagonals are not possible.
 
@@ -79,7 +79,7 @@ Note: Axis Type is not configurable when endpoint incremental is selected.
 ## Toggle Preview
 Using this button, you can choose if you would like to view the preview parts before applying:
 
-![image|86x84](upload://b9X2UGnitKCfnL3OFH1n5a7Q0p9.png) 
+![Toggle preview button](Hide_Preview.png)
 
 This is purely visual, it does not change any setting. If you apply while the preview parts are hidden, it will still function as intended.
 ___
