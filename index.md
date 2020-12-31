@@ -65,11 +65,13 @@ NOTE: This mode is in alpha, please use with patience. I plan to add more featur
 The difference between the two is seen when you rotate the original part. 
 
 This is the result with local selected:
+
 ![Local axis type](Local.gif)
 
 In local mode, the array parts move with the rotation of the original part and their axis is one of the part's face vectors (such as -Z being the look vector etc.).
 
 In contrast, this is what happens when global is selected.
+
 ![Global axis type](Global.gif)
 
 Global mode can be useful in certain cases if you just want the array parts to rotate while being stationary on a global axis. This will limit you to the 6 axis (+X, +Y, +Z, -X, -Y, and -Z) and diagonals are not possible.
