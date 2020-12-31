@@ -56,7 +56,7 @@ The last one deserves a bit more explanation. It creates a series of parts betwe
 
 Unlike the other two types, endpoint incremental needs to have the count be n + 2 where n denotes the number of parts in between the two endpoints.
 
-> NOTE: This mode is in alpha, please use with patience. I plan to add more features to it and eliminate bugs.
+> **NOTE: This mode is in alpha, please use with patience. I plan to add more features to it and eliminate bugs.**
 
 ### Axis Type
 * **Local** - use the vectors of the part's faces
@@ -76,7 +76,7 @@ In contrast, this is what happens when global is selected.
 
 Global mode can be useful in certain cases if you just want the array parts to rotate while being stationary on a global axis. This will limit you to the 6 axis (+X, +Y, +Z, -X, -Y, and -Z) and diagonals are not possible.
 
-> Note: Axis Type is not configurable when endpoint incremental is selected.
+> **Note: Axis Type is not configurable when endpoint incremental is selected.**
 
 ## Toggle Preview
 Using this button, you can choose if you would like to view the preview parts before applying:
@@ -106,4 +106,4 @@ ___
 ## Closure
 Thank you all for using this plugin. I appreciate your patience with my novelty with plugins in advance! With reporting bugs or requesting features, just know beforehand that I am considering all feedback, but I may be delayed in delivering a response and/or the update.
 
-(If you are reading this on the day of release then Happy New Year!)
+(If you are reading this on the day of release then Happy New Year!) :sparkles:
