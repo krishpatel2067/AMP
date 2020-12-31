@@ -97,11 +97,11 @@ Priority levels:
 [2] - Moderate (less guaranteed)
 [3] - Low (not very likely)
 
-- [] [1] Fixing bugs (of course)
-- [] [1] Trying to work out the whole undo/redo situation
-- [] [1] Optimize code
-- [] [2] Allow endpoint incremental to work with 2+ parts e.g. selecting 3 parts will create a "triangle" of array parts in between.
-- [] [3] Adding an object transformation mode to create more advanced structures
+- [x] [1] Fixing bugs (of course)
+- [ ] [1] Trying to work out the whole undo/redo situation
+- [ ] [1] Optimize code
+- [ ] [2] Allow endpoint incremental to work with 2+ parts e.g. selecting 3 parts will create a "triangle" of array parts in between.
+- [ ] [3] Adding an object transformation mode to create more advanced structures
 ___
 ## Closure
 Thank you all for using this plugin. I appreciate your patience with my novelty with plugins in advance! With reporting bugs or requesting features, just know beforehand that I am considering all feedback, but I may be delayed in delivering a response and/or the update.
