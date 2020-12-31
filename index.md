@@ -61,9 +61,11 @@ Unlike the other two types, endpoint incremental needs to have the count be n + 
 This is the terminology I will use to describe the following behavior of endpoint incremental. After you have established a pair of endpoints (simply by having preview parts between them), you can select one of those endpoints to have them be endpoint 1. This will mean that the array parts will mimick endpoint. For example:
 
 ![Small part selected as endpoint 1](Images/Endpoint_1.png)
+
 This is when the left part is selected last. It is set to Endpoint 1 and therefore, the array parts are small just like it.
 
 ![Large part selected as endpoint 1](Images/Endpoint_2.png)
+
 On the contrary, since the large part is now endpoint 1, the array parts are also all large.
 
 > **NOTE: This Endpoint 1 and 2 behavior will not occur with transform on (see below).**
@@ -74,11 +76,13 @@ This is an optional feature that is only configurable when endpoint incremental 
 > **NOTE: When you have transform enabled, it doesn't matter which endpoint is 1, it will function the same.**
 
 Here is an example with tranform on:
+
 ![Transform on](Images/Transform_On.png)
 
 The above image, since there are more parts, the increment between each part is small, thus it looks "smoother." It almost looks like a spiral staircase except that this one is in a linear fashion (I plan on adding curves to enchance the resulting structures).
 
 And here is with it off:
+
 ![Transform off](Images/Transform_Off.png)
 
 > **NOTE: Endpoint incremental mode is in alpha, please use with patience. I plan to add more features to it and eliminate bugs.**
