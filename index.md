@@ -97,7 +97,7 @@ Priority levels:
 [2] - Moderate (less guaranteed)
 [3] - Low (not very likely)
 
-- [x] [1] Fixing bugs (of course)
+- [ ] [1] Fixing bugs (of course)
 - [ ] [1] Trying to work out the whole undo/redo situation
 - [ ] [1] Optimize code
 - [ ] [2] Allow endpoint incremental to work with 2+ parts e.g. selecting 3 parts will create a "triangle" of array parts in between.
