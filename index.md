@@ -16,11 +16,11 @@ Visit SITE to install the plugin to Roblox Studio.
 2. Select a part or multiple parts. 
 3. The last part selected will be shown along with its class name [1]. Under it, you can add the modifier for all selected parts, by clicking on the corresponding button [2].
 
-![Add button](Add_Part.png)
+![Add button](Images/Add_Part.png)
 
 4. You will see all the settings currently available. Let us understand what each one does in the section below.
 
-![Settings](Settings.png)
+![Settings](Images/Settings.png)
 
 Notice the "Apply" button. Until you click it, any change of settings will reflect only a *preview* of the result. To actually create the result, you must apply the modifier by clicking the button. Once you apply,  you cannot change the settings and you'll have to add the modifier to the part again.
 
@@ -40,13 +40,13 @@ Since you can have constant and relative offset both on at the same time, you ca
 
 The part below is of size 4 in the X-direction. Offsetting it by 3 will leave a 1 stud overlap between each part.
 
-![Constant enabled only](Only_Constant.png)
+![Constant enabled only](Images/Only_Constant.png)
 
 If you want it to be distance between the *edges* of the parts, all you need to do is enable relative offset and input 1 for that given direction.
 
 This is after setting the X relative offset to 1 while keeping the constant offset enabled. As you can see, now it's 3 studs between the *edges* of parts.
 
-![Relative and constant enabled](Relative_And_Constant.png)
+![Relative and constant enabled](Images/Relative_And_Constant.png)
 
 ## Array Type
 * **Fixed count** - create a set number of parts with a defined offset
@@ -60,10 +60,10 @@ Unlike the other two types, endpoint incremental needs to have the count be n + 
 ### Endpoint 1 and Endpoint 2
 This is the terminology I will use to describe the following behavior of endpoint incremental. After you have established a pair of endpoints (simply by having preview parts between them), you can select one of those endpoints to have them be endpoint 1. This will mean that the array parts will mimick endpoint. For example:
 
-![Small part selected as endpoint 1](Endpoint_1.png)
+![Small part selected as endpoint 1](Images/Endpoint_1.png)
 This is when the left part is selected last. It is set to Endpoint 1 and therefore, the array parts are small just like it.
 
-![Large part selected as endpoint 1](Endpoint_2.png)
+![Large part selected as endpoint 1](Images/Endpoint_2.png)
 On the contrary, since the large part is now endpoint 1, the array parts are also all large.
 
 > **NOTE: This Endpoint 1 and 2 behavior will not occur with transform on (see below).**
@@ -74,12 +74,12 @@ This is an optional feature that is only configurable when endpoint incremental 
 > **NOTE: When you have transform enabled, it doesn't matter which endpoint is 1, it will function the same.**
 
 Here is an example with tranform on:
-![Transform on](Transform_On.png)
+![Transform on](Images/Transform_On.png)
 
 The above image, since there are more parts, the increment between each part is small, thus it looks "smoother." It almost looks like a spiral staircase except that this one is in a linear fashion (I plan on adding curves to enchance the resulting structures).
 
 And here is with it off:
-![Transform off](Transform_Off.png)
+![Transform off](Images/Transform_Off.png)
 
 > **NOTE: Endpoint incremental mode is in alpha, please use with patience. I plan to add more features to it and eliminate bugs.**
 
@@ -91,13 +91,13 @@ The difference between the two is seen when you rotate the original part.
 
 This is the result with local selected:
 
-![Local axis type](Local.gif)
+![Local axis type](Images/Local.gif)
 
 In local mode, the array parts move with the rotation of the original part and their axis is one of the part's face vectors (such as -Z being the look vector etc.).
 
 In contrast, this is what happens when global is selected.
 
-![Global axis type](Global.gif)
+![Global axis type](Images/Global.gif)
 
 Global mode can be useful in certain cases if you just want the array parts to rotate while being stationary on a global axis. This will limit you to the 6 axis (+X, +Y, +Z, -X, -Y, and -Z) and diagonals are not possible.
 
@@ -106,7 +106,7 @@ Global mode can be useful in certain cases if you just want the array parts to r
 ## Toggle Preview
 Using this button, you can choose if you would like to view the preview parts before applying:
 
-![Toggle preview button](Hide_Preview.png)
+![Toggle preview button](Images/Hide_Preview.png)
 
 This is purely visual, it does not change any setting. If you apply while the preview parts are hidden, it will still function as intended.
 
@@ -118,7 +118,7 @@ Here are several common examples where array-type structure come in handy (and e
 * Relative offset only - (0, 1, 1)
 * Count - 100
 
-![Stairway to heaven](Stairway_To_Heaven.png)
+![Stairway to heaven](Images/Stairway_To_Heaven.png)
 
 ## Skyscraper windows
 4 parts selected (in red)
@@ -126,7 +126,7 @@ Here are several common examples where array-type structure come in handy (and e
 * Constant offset - (0, 1, 0)
 * Count - 25
 
-![Skyscraper windows](Skyscraper_Windows.png)
+![Skyscraper windows](Images/Skyscraper_Windows.png)
 
 ## Tiles
 Place two parts adjacent to another another (set them to different colors); set these to both:
@@ -136,11 +136,11 @@ Place two parts adjacent to another another (set them to different colors); set 
 (This is only one row, so place more adjacent parts to create an entire tiled floor)
 Here is the preview:
 
-![Tiles preview](Tiles_Preview.png)
+![Tiles preview](Images/Tiles_Preview.png)
 
 And here is the product:
 
-![Tiles applied](Tiles_Applied.png)
+![Tiles applied](Images/Tiles_Applied.png)
 
 ___
 # Other Info
@@ -153,7 +153,7 @@ ___
 ## Warnings
 * AMP will insert a folder called "PreivewParts_AMP" in the workspace to store preview parts temporarily. It will automatically delete it once the plugin unloads. Please do not delete this folder manually to ensure the best function. I also have this as a friendly reminder inside of the folder if you expand it:
 
-![Warning](Warning.png)
+![Warning](Images/Warning.png)
 
 *  Upon installing the plugin, Studio will prompt you to allow or deny script injection permission. I don't know why that appears, but denying it will not allow the plugin to function.
 
