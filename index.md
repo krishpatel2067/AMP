@@ -1,13 +1,15 @@
+(**Get the plugin**)[https://www.roblox.com/library/6171221790/AMP-Array-Modifier-Plugin]
+(**DevForum post**)[https://devforum.roblox.com/t/1-0-0-amp-array-modifier-plugin/956124?u=thecarbyneuniverse]
+
 # AMP - Array Modifier Plugin
 
 AMP is a plugin made to easily create arrays of parts to alleviate any need to manually perform repetitive steps. There are many features to suit almost any situation, and of course, I'll add more as time goes on.
 
 Please note that this is my first plugin and therefore, there may be bugs I have overlooked. So, please be patient!
-
 ___
 
 ## Getting Started
-Visit SITE to install the plugin to Roblox Studio.
+Click [here](https://www.roblox.com/library/6171221790/AMP-Array-Modifier-Plugin) to install the plugin to Roblox Studio.
 
 1. Open the widget by clicking on the plugin icon:
 
@@ -22,8 +24,15 @@ Visit SITE to install the plugin to Roblox Studio.
 
 ![Settings](Images/Settings.png)
 
-Notice the "Apply" button. Until you click it, any change of settings will reflect only a *preview* of the result. To actually create the result, you must apply the modifier by clicking the button. Once you apply,  you cannot change the settings and you'll have to add the modifier to the part again.
+If you want to remove the modifier from the selected part, simply click on the button with the red trash-can icon at the bottom.
 
+Also, notice the "Apply" button under the remove button. Until you click it, any change of settings will reflect only a *preview* of the result. To actually create the result, you must apply the modifier by clicking the button. Once you apply,  you cannot change the settings and you'll have to add the modifier to the part again.
+
+To the left of the apply button, the button with the eye allows you to toggle (hide/show) the preview parts for the selected part.
+
+Finally, if you want quick help without having to come here or the DevForum post, I've added a help widget. Simply click the question mark icon button in the plugin toolbar:
+
+![Help plugin button](Images/Help_Button.png)
 ___
 # Features
 
@@ -57,6 +66,15 @@ The last one deserves a bit more explanation. It creates a series of parts betwe
 
 Unlike the other two types, endpoint incremental needs to have the count be n + 2 where n denotes the number of parts in between the two endpoints.
 
+In update 1.1.1, I've added the ability to use endpoint incremental on 2+ parts! For example, you can create pentagonal structures:
+
+![Pentagon with endpoint incremental](Images/2_Plus_Parts.png)
+
+It matters which order you select the parts, meaning it is safer to select parts one-by-one than drag-select. If you drag-select, then the array parts will not necessarily follow the outline of the shape:
+
+![Intertwined shape](Images/Intertwined.png)
+These are the same parts as the image above this one, but the parts are selected in a different order.
+
 ### Endpoint 1 and Endpoint 2
 This is the terminology I will use to describe the following behavior of endpoint incremental. After you have established a pair of endpoints (simply by having preview parts between them), you can select one of those endpoints to have them be endpoint 1. This will mean that the array parts will mimick endpoint. For example:
 
@@ -67,6 +85,8 @@ This is when the left part is selected last. It is set to Endpoint 1 and therefo
 ![Large part selected as endpoint 1](Images/Endpoint_2.png)
 
 On the contrary, since the large part is now endpoint 1, the array parts are also all large.
+
+This behavior is a bit more complex with 2+ parts--if there's one endpoint connected to two separate endpoints (like in a triangle), any changes in endpoint1/endpoint 2 will reflect on both of those line of parts to those endpoints.
 
 > **NOTE: This Endpoint 1 and 2 behavior will not occur with transform on (see below).**
 
@@ -106,14 +126,6 @@ In contrast, this is what happens when global is selected.
 Global mode can be useful in certain cases if you just want the array parts to rotate while being stationary on a global axis. This will limit you to the 6 axis (+X, +Y, +Z, -X, -Y, and -Z) and diagonals are not possible.
 
 > **Note: Axis Type is not configurable when endpoint incremental is selected.**
-
-## Toggle Preview
-Using this button, you can choose if you would like to view the preview parts before applying:
-
-![Toggle preview button](Images/Hide_Preview.png)
-
-This is purely visual, it does not change any setting. If you apply while the preview parts are hidden, it will still function as intended.
-
 ___
 # Common Use Cases
 Here are several common examples where array-type structure come in handy (and especially where such a convenient plugin comes in handy well!).
@@ -167,10 +179,8 @@ Priority levels:
 [2] - Moderate (less guaranteed)
 [3] - Low (not very likely)
 
-- [ ] [1] Fixing bugs (of course)
 - [ ] [1] Trying to work out the whole undo/redo situation
-- [ ] [1] Optimize code
-- [ ] [2] Allow endpoint incremental to work with 2+ parts e.g. selecting 3 parts will create a "triangle" of array parts in between.
+- [x] ~~[2] Allow endpoint incremental to work with 2+ parts e.g. selecting 3 parts will create a "triangle" of array parts in between.~~
 - [ ] [3] Adding an object transformation mode to create more advanced structures
 - [ ] [3] Adding a system to create curves to have the parts follow as opposed to simply a straight line
 
@@ -180,6 +190,6 @@ Thank you all for using this plugin. I appreciate your patience with my novelty 
 (If you are reading this on the day of release then Happy New Year!)
 
 ___
-*(c) TheCarbyneUniverse 2020*
+*(c) TheCarbyneUniverse 2020-21*
 
 *All rights reserved.*
