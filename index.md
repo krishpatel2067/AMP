@@ -1,5 +1,5 @@
-(**Get the plugin**)[https://www.roblox.com/library/6171221790/AMP-Array-Modifier-Plugin]
-(**DevForum post**)[https://devforum.roblox.com/t/1-0-0-amp-array-modifier-plugin/956124?u=thecarbyneuniverse]
+(Get the plugin)[https://www.roblox.com/library/6171221790/AMP-Array-Modifier-Plugin]
+(DevForum post)[https://devforum.roblox.com/t/1-0-0-amp-array-modifier-plugin/956124?u=thecarbyneuniverse]
 
 # AMP - Array Modifier Plugin
 
